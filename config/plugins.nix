@@ -152,9 +152,20 @@
     cmp-nvim-lsp = {
       enable = true;
     };
+
+    yazi = {
+      enable = true;
+      settings.floating_window_scaling_factor = 1.0;
+    };
   };
 
   keymaps = [
+    {
+      mode = "n";
+      key = "<leader>e";
+      action = "<cmd>Yazi<cr>";
+      options.desc = "Step back to files";
+    }
     {
       mode = "n";
       key = "<leader>a";

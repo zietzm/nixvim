@@ -31,12 +31,6 @@
   };
   keymaps = [
     {
-      mode = "n";
-      key = "<leader>e";
-      action.__raw = "function() vim.cmd.Ex() end";
-      options.desc = "Step back to files";
-    }
-    {
       mode = "v";
       key = "J";
       action = ":m '>+1<CR>gv=gv";
