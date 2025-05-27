@@ -1,5 +1,5 @@
 {
-  lsp.inlayHints.enable = true;
+  lsp.inlayHints.enable = false;
   lsp.servers = {
     nil_ls.enable = true;
     nixd.enable = true;
