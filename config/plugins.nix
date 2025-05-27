@@ -35,6 +35,19 @@
       ht.repl.toggle(vim.api.nvim_buf_get_name(0))
     end, opts)
     vim.keymap.set('n', '<leader>rq', ht.repl.quit, opts)
+    vim.g.haskell_tools = {
+      hls = {
+        settings = {
+          haskell = {
+            plugin = {
+              importLens = {
+                codeLensOn = false,
+              },
+            },
+          },
+        },
+      }
+    }
   '';
 
   plugins = {
