@@ -135,7 +135,7 @@
         cpp = [ "clang-format" ];
         sh = [ "shfmt" ];
         sql = [ "sleek" ];
-        haskell = [ "ormolu" ];
+        haskell = [ "formolu" ];
         nix = [ "nixfmt" ];
         "*" = [
           "trim_whitespace"
