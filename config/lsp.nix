@@ -7,7 +7,7 @@
     ts_ls.enable = true;
     gopls.enable = true;
     lua_ls.enable = true;
-    hls.enable = true;
+    hls.enable = false;
     pyright = {
       enable = true;
       settings = {
