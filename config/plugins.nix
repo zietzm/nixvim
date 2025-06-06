@@ -60,6 +60,7 @@
     lazygit.enable = true;
     lspconfig.enable = true;
     which-key.enable = true;
+    gitblame.enable = true;
 
     telescope = {
       enable = true;
@@ -135,7 +136,7 @@
         cpp = [ "clang-format" ];
         sh = [ "shfmt" ];
         sql = [ "sleek" ];
-        haskell = [ "formolu" ];
+        haskell = [ "fourmolu" ];
         nix = [ "nixfmt" ];
         "*" = [
           "trim_whitespace"
