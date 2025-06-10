@@ -4,7 +4,7 @@
     haskellPackages.fourmolu
     stylua
     sleek
-    nixfmt-rfc-style
+    nixpkgs-fmt
     ruff
     isort
     shfmt
@@ -137,7 +137,7 @@
         sh = [ "shfmt" ];
         sql = [ "sleek" ];
         haskell = [ "fourmolu" ];
-        nix = [ "nixfmt" ];
+        nix = [ "nixpkgs_fmt" ];
         "*" = [
           "trim_whitespace"
           "trim_newlines"
