@@ -3,7 +3,10 @@
   lsp.servers = {
     nil_ls = {
       enable = true;
-      settings.nix.flake.autoArchive = true;
+      settings.nix.flake = {
+        autoArchive = true;
+        autoEvalInputs = true;
+      };
     };
     nixd.enable = true;
     dhall_lsp_server.enable = true;
