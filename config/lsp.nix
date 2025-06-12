@@ -1,7 +1,10 @@
 {
   lsp.inlayHints.enable = false;
   lsp.servers = {
-    nil_ls.enable = true;
+    nil_ls = {
+      enable = true;
+      settings.nix.flake.autoArchive = true;
+    };
     nixd.enable = true;
     dhall_lsp_server.enable = true;
     ts_ls.enable = true;
