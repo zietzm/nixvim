@@ -115,6 +115,10 @@
       };
     };
 
+    treesitter-context = {
+      enable = true;
+    };
+
     conform-nvim = {
       enable = true;
       settings.format_on_save = {
