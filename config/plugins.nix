@@ -241,7 +241,7 @@
     {
       mode = "n";
       key = "<leader>cl";
-      action = "<cmd>Trouble lsp toggle focus=false win.position=right<cr>";
+      action = "<cmd>Trouble lsp toggle focus=false<cr>";
       options.desc = "LSP Definitions / references / ... (Trouble)";
     }
     {
