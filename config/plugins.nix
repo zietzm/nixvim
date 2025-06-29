@@ -52,7 +52,13 @@
 
   plugins = {
     web-devicons.enable = true;
-    comment.enable = true;
+    comment = {
+      enable = true;
+      luaConfig.content = ''
+        local ft = require('Comment.ft')
+        ft.set('janet', '#%s')
+      '';
+    };
     todo-comments.enable = true;
     rustaceanvim.enable = true;
     crates.enable = true;
@@ -142,6 +148,7 @@
         sql = [ "sleek" ];
         haskell = [ "fourmolu" ];
         nix = [ "nixpkgs_fmt" ];
+        janet = [ "janet-format" ];
         "*" = [
           "trim_whitespace"
           "trim_newlines"
@@ -174,6 +181,7 @@
     yazi = {
       enable = true;
       settings.floating_window_scaling_factor = 1.0;
+      settings.show_hidden = true;
     };
   };
 
